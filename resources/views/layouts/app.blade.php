@@ -12,6 +12,9 @@
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/bootstrap.techie.css')}}">
+    <link rel="stylesheet" href="{{asset('/css/index.css')}}">
 
     <!-- Scripts -->
     <script>
@@ -82,6 +85,9 @@
     </div>
 
     <!-- Scripts -->
+    <script src="{{asset('/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('/js/typeahead.min.js')}}"></script>
     <script src="/js/app.js"></script>
 </body>
 </html>

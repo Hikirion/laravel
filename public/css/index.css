@@ -76,4 +76,7 @@ body {
     .jumbotron {
         border-bottom: 0;
     }
+    .navbar, navbar-default, navbar-static-top{
+        background-color: #f5f5f5 !important;
+    }
 }

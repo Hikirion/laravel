@@ -9,6 +9,7 @@
 
                 <div class="panel-body">
                     You are logged in!
+                    <div><a href="{{url("/tickets")}}" class="btn btn-block btn-default">My ticket</a></div>
                 </div>
             </div>
         </div>
