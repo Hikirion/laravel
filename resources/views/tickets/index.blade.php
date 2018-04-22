@@ -37,7 +37,7 @@
     <!-- Текущие задачи -->
     @if (count($tickets) > 0)
         <div class="panel panel-default">
-            <div class="panel-heading">
+            <div class="panel-heading ticket-panel-header">
                 Last ticket
             </div>
 
@@ -68,7 +68,7 @@
                                     {{ csrf_field() }}
                                     {{ method_field('DELETE') }}
 
-                                    <button type="submit" id="delete-task-{{ $ticket->id }}" class="btn btn-danger">
+                                    <button type="submit" id="delete-task-{{ $ticket->id }}" class="btn btn-default">
                                         <i class="fa fa-btn fa-trash"></i>Delete
                                     </button>
                                 </form>

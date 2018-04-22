@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace app\Http\Controllers;
 
-use App\Repositories\TicketRepository;
+use app\Model\Ticket;
+use app\Repositories\TicketRepository;
 use Illuminate\Http\Request;
 
 class TicketController extends Controller
@@ -34,6 +35,15 @@ class TicketController extends Controller
             'title' => $request->title,
             'body' => $request->body,
         ]);
+
+        return redirect('/tickets');
+    }
+
+    public function destroy(Request $request, Ticket $ticket)
+    {
+        $this->authorize('destroy', $ticket);
+
+        $ticket->delete();
 
         return redirect('/tickets');
     }

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repositories;
+namespace app\Repositories;
 
-use App\User;
+use app\User;
 
 class TicketRepository
 {

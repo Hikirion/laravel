@@ -1,8 +1,8 @@
 <?php
 
-namespace App;
+namespace app;
 
-use App\Model\Ticket;
+use app\Model\Ticket;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
