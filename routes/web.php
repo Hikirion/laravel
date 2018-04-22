@@ -19,3 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/', 'HomeController@index');
+
+Route::get('/tickets', 'TicketController@index');
+Route::post('/ticket', 'TicketController@store');
+Route::delete('/ticket/{ticket}', 'TicketController@destroy');
