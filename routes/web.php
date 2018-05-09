@@ -23,3 +23,6 @@ Route::get('/', 'HomeController@index');
 Route::get('/tickets', 'TicketController@index');
 Route::post('/ticket', 'TicketController@store');
 Route::delete('/ticket/{ticket}', 'TicketController@destroy');
+Route::GET('/ticket/{ticket}/edit', 'TicketController@edit');
+Route::PUT('/ticket/{ticket}/update', 'TicketController@update');
+Route::get('/ticket/search', 'TicketController@search');

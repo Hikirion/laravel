@@ -17,6 +17,10 @@ class CreateTicketTable extends Migration
             $table->increments('id');
             $table->char('title', 255);
             $table->char('body');
+            $table->integer('category_id')->unsigned()->index();
+            $table->foreign('category_id')
+                ->references('id')->on('categories')
+                ->onDelete('cascade');
             $table->integer('user_id')->unsigned()->index();
             $table->foreign('user_id')
                 ->references('id')->on('users')
