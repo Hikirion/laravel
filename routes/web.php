@@ -25,4 +25,6 @@ Route::post('/ticket', 'TicketController@store');
 Route::delete('/ticket/{ticket}', 'TicketController@destroy');
 Route::GET('/ticket/{ticket}/edit', 'TicketController@edit');
 Route::PUT('/ticket/{ticket}/update', 'TicketController@update');
-Route::get('/ticket/search', 'TicketController@search');
+Route::get('/ticket/search/', 'TicketController@search');
+
+Route::get('/category/{id}', 'CategoryController@index');

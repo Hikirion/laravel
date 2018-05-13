@@ -95,6 +95,13 @@ class TicketController extends Controller
 
     public function search(Request $request)
     {
-        $request->user()->ticket()->where('title', 'like', '%'.$request->search.'%')->get();
+        $query = $request->get('search');
+
+        $ticket = $this->tickets->getSearch($request->user(), $query);
+
+        return view('tickets.search', [
+            'tickets' => $ticket,
+            'query' => $query,
+        ]);
     }
 }
